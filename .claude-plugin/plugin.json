@@ -1,0 +1,22 @@
+{
+  "name": "yevhenii-skills",
+  "version": "0.1.0",
+  "description": "Personal agent skills. Currently a product discovery chain: grill an idea to a verdict, research what could kill it, then define the project.",
+  "author": {
+    "name": "Yevhenii Volosiuk"
+  },
+  "repository": "https://github.com/YevheniiVolosiuk/skills",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "product",
+    "discovery",
+    "idea-validation",
+    "project-brief"
+  ],
+  "skills": [
+    "./skills/product/idea-grill",
+    "./skills/product/idea-research",
+    "./skills/product/project-brief"
+  ]
+}

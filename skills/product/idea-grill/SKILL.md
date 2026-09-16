@@ -11,7 +11,7 @@ The interrogation is not this skill's job. `mattpocock-skills:grilling` does tha
 
 ## 1. Open the workspace
 
-Read [`references/idea-workspace.md`](../../references/idea-workspace.md) and create the idea folder.
+Read [`WORKSPACE.md`](WORKSPACE.md) and create the idea folder.
 
 Before asking a single question, write the idea down in the user's own words. One paragraph. Every later step checks itself against this paragraph, so capture what they said, not what you think they meant.
 
@@ -29,9 +29,9 @@ An assumption is load-bearing when the idea dies if it turns out false. Mark tho
 
 ## 3. Write the verdict
 
-Read [`references/decision-states.md`](../../references/decision-states.md) and pick the state the evidence supports.
+Read [`DECISION-STATES.md`](DECISION-STATES.md) and pick the state the evidence supports.
 
-Fill [`templates/idea-decision.md`](../../templates/idea-decision.md) into the workspace as `idea-decision.md`.
+Fill [`IDEA-DECISION-FORMAT.md`](IDEA-DECISION-FORMAT.md) into the workspace as `idea-decision.md`.
 
 **Done when:** the file names exactly one state, and every assumption from step 2 appears in it — each either resolved by the grilling, or listed open with the question that would resolve it. An assumption that appears nowhere in the file was dropped, not handled.
 

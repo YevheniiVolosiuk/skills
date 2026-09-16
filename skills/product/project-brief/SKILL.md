@@ -11,17 +11,17 @@ A brief earns its keep through what it *excludes*. A description that would fit 
 
 ## 1. Check the input
 
-Read `idea-decision.md` from the idea workspace ([`references/idea-workspace.md`](../../references/idea-workspace.md)), plus anything in `research/`.
+Read `idea-decision.md` from the idea workspace ([`WORKSPACE.md`](../idea-grill/WORKSPACE.md)), plus anything in `research/`.
 
 If the verdict is not PROCEED, say so and stop. A brief written over a REFINE launders an open question into a commitment — the exact failure this chain exists to prevent.
 
-If the project has no decision record at all (an existing project being documented late), reconstruct one by asking the user the questions in [`references/decision-states.md`](../../references/decision-states.md) under PROCEED. That takes minutes and it is the whole foundation.
+If the project has no decision record at all (an existing project being documented late), reconstruct one by asking the user the questions in [`DECISION-STATES.md`](../idea-grill/DECISION-STATES.md) under PROCEED. That takes minutes and it is the whole foundation.
 
 **Done when:** you can state, in one sentence each, the first user and the problem in that user's words.
 
 ## 2. Draft against the template
 
-Fill [`templates/project-description.md`](../../templates/project-description.md).
+Fill [`PROJECT-DESCRIPTION-FORMAT.md`](PROJECT-DESCRIPTION-FORMAT.md).
 
 Carry the research findings in as constraints, not as prose. "Existing tools return results in 2-4s at 10k notes" is a constraint on what this must beat. A finding that survives into the brief as background colour should have been cut at `idea-research`.
 

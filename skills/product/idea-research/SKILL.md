@@ -11,7 +11,7 @@ The point is ordering. Most research on a new idea is wasted because the cheap c
 
 ## 1. Read the decision record
 
-Read `idea-decision.md` from the idea workspace ([`references/idea-workspace.md`](../../references/idea-workspace.md)).
+Read `idea-decision.md` from the idea workspace ([`WORKSPACE.md`](../idea-grill/WORKSPACE.md)).
 
 If there is no decision record, run `idea-grill` first. Researching an idea nobody has grilled produces answers to questions nobody needed.
 
@@ -38,7 +38,7 @@ Rank: kill-questions, then scope questions (the answer changes what gets built),
 
 ## 4. Write and dispatch
 
-Fill [`templates/research-questions.md`](../../templates/research-questions.md) into the workspace as `research-questions.md`.
+Fill [`RESEARCH-QUESTIONS-FORMAT.md`](RESEARCH-QUESTIONS-FORMAT.md) into the workspace as `research-questions.md`.
 
 Invoke `mattpocock-skills:research` on the kill-questions, one dispatch per question, writing findings into `research/` in the workspace.
 
@@ -46,4 +46,4 @@ Invoke `mattpocock-skills:research` on the kill-questions, one dispatch per ques
 
 ## Where it goes next
 
-Re-read [`references/decision-states.md`](../../references/decision-states.md) against the findings. The verdict may have moved; a REFINE that researched well becomes a PROCEED or a REJECT, and either is progress.
+Re-read [`DECISION-STATES.md`](../idea-grill/DECISION-STATES.md) against the findings. The verdict may have moved; a REFINE that researched well becomes a PROCEED or a REJECT, and either is progress.

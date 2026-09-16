@@ -1,0 +1,22 @@
+{
+  "name": "yevhenii",
+  "owner": {
+    "name": "Yevhenii Volosiuk",
+    "url": "https://github.com/YevheniiVolosiuk"
+  },
+  "description": "Yevhenii's personal agent skills, installable as a Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "yevhenii-skills",
+      "source": "./",
+      "description": "Personal agent skills. Currently a product discovery chain: grill an idea to a verdict, research what could kill it, then define the project.",
+      "category": "product",
+      "keywords": [
+        "product",
+        "discovery",
+        "idea-validation",
+        "project-brief"
+      ]
+    }
+  ]
+}

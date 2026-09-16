@@ -1,71 +1,66 @@
 # skills
 
-Personal agent skills. Source of truth for the skill files themselves; the catalog that indexes and installs them is [`web-developmet-registry`](https://github.com/YevheniiVolosiuk/web-developmet-registry).
+Personal agent skills, shipped as a Claude Code plugin.
 
 ## Layout
 
 ```
-skills/       one folder per skill, folder name == frontmatter name
-references/   shared knowledge, pointed at by skills
-templates/    output formats the skills fill in
+.claude-plugin/
+  plugin.json        every skill path, listed explicitly
+  marketplace.json   makes this repo installable as a marketplace
+skills/
+  <category>/
+    README.md        what the category is for
+    <skill-name>/
+      SKILL.md       the skill
+      *.md           its own references and formats, flat beside it
 ```
 
-Flat. No category folders — the name carries the domain, and a sorted listing reads as the lifecycle.
+Each skill is self-contained: the reference material and output formats it owns sit inside its own folder, not in a shared `templates/` or `references/` pile at the root. A skill folder is the unit you read, move, or delete.
+
+When two skills in a category genuinely share a reference, the skill that *creates* the thing owns the file and the others point across at it — one source of truth, no copies.
 
 ## Naming
 
-Lowercase kebab-case, domain first: `idea-grill`, `idea-research`, `project-brief`.
+- **Skills:** lowercase kebab-case, domain first — `idea-grill`, `idea-research`, `project-brief`. The domain word groups a category into a readable sequence, and the frontmatter `description` (not the name) is what actually triggers a skill. No `product-` prefix: the category folder already says that.
+- **Sibling files:** `UPPERCASE-KEBAB.md`. `*-FORMAT.md` for an output shape the skill fills in; a plain name for reference material it reads.
 
-Domain first rather than action first because the domain word groups the folder into a readable sequence, and the frontmatter `description` — not the name — is what actually triggers a skill. No `product-` prefix: the repo is already the category, and every prefix character is paid for in context on every turn.
+## Categories
 
-## What is here
-
-A product discovery chain. Three skills, deliberately — validate on a real idea before adding a fourth.
-
-```
-idea-grill        →  idea-decision.md
-idea-research     →  research-questions.md  →  research/
-project-brief     →  project-description.md
-```
-
-| Skill | Does | Leans on |
-|---|---|---|
-| `idea-grill` | Raw idea → written verdict | `mattpocock-skills:grilling` |
-| `idea-research` | Open assumptions → ranked questions, dispatched | `mattpocock-skills:research` |
-| `project-brief` | PROCEED verdict → project definition | — |
-
-`idea-grill` does not re-implement grilling. It wraps it with a workspace, an assumption ledger, and a verdict that survives the conversation.
+| Category | For |
+|---|---|
+| [`product`](skills/product) | Idea → verdict → project definition |
 
 ## Where artifacts go
 
-Not here. Skills are reusable behaviour; idea and project documents are project memory, with a different lifecycle. See [`references/idea-workspace.md`](references/idea-workspace.md).
+Not here. Skills are reusable behaviour; idea and project documents are project memory with a different lifecycle. See [`WORKSPACE.md`](skills/product/idea-grill/WORKSPACE.md).
 
 ## Deliberately absent
 
-- **`registry.yaml`** — the registry repo holds the catalog. A second copy here would be a stale duplicate of it.
+- **`registry.yaml`** — [`web-developmet-registry`](https://github.com/YevheniiVolosiuk/web-developmet-registry) holds the catalog. A second copy here would be a stale duplicate.
 - **`workflows/*.yaml`** — nothing executes YAML steps. Sequencing lives in each skill's closing section, which an agent actually reads.
-- **`category:` frontmatter** — Claude Code reads `name`, `description`, `allowed-tools`. A category field changes no behaviour.
+- **`category:` frontmatter** — Claude Code reads `name`, `description`, `allowed-tools`. The folder carries the category.
 
 ## Install
 
-Via the registry skill:
+As a plugin:
 
 ```
-/registry add skill:idea-grill https://github.com/YevheniiVolosiuk/skills/blob/main/skills/idea-grill/SKILL.md
-/registry install skill:idea-grill
+/plugin marketplace add YevheniiVolosiuk/skills
+/plugin install yevhenii-skills@yevhenii
 ```
 
-Or directly, for local iteration:
+Or symlink a single skill while tuning it:
 
 ```sh
-ln -s "$PWD/skills/idea-grill" ~/.claude/skills/idea-grill
+ln -s "$PWD/skills/product/idea-grill" ~/.claude/skills/idea-grill
 ```
 
-The symlink is the better loop while a skill is still being tuned — edit, run it on a real idea, edit again.
+The symlink is the better loop while a skill is still moving — edit, run it on a real idea, edit again.
 
 ## Adding a skill
 
-1. It earns a slot by failing in practice first. Write the skill after you have watched the gap, not before.
-2. One folder, one `SKILL.md`, folder name matching frontmatter `name`.
-3. Shared knowledge goes in `references/`, output shapes in `templates/` — never restated inside a skill.
-4. Register it in the catalog repo.
+1. It earns a slot by failing in practice first. Write it after watching the gap, not before.
+2. One folder under a category, one `SKILL.md`, folder name matching frontmatter `name`.
+3. Its references and formats go beside it, not in a shared root folder.
+4. Add the path to `.claude-plugin/plugin.json` and the row to the category `README.md`.
