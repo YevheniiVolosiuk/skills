@@ -9,6 +9,16 @@ Turns a raw idea into `IDEA-DECISION.md` — a dated record of what the idea is,
 
 The interrogation is not this skill's job. `mattpocock-skills:grilling` does that, and does it harder than anything written here would. This skill supplies the frame around it: a workspace, an assumption ledger, and a verdict that outlives the conversation.
 
+## Asking
+
+Every question to the user, in every step, goes through `AskUserQuestion`, one question per call:
+
+- **Body:** the question, the one or two facts behind it, and the trade-off axis the options sit on ("speed vs. moat").
+- **Options:** two to four concrete answers, your recommendation first and labelled `(Recommended)`. Each description reads `<what it is>. Pros: <…>. Cons: <…>.` The recommended one ends with `Why this is the best choice: <…>.`
+- **Between questions:** when the user answers through "Other" with a doubt or a tangent, talk it through in plain text until it settles, then ask the next question.
+
+`grilling`'s design tree still picks which question comes next; this replaces only its rounds.
+
 ## 1. Open the workspace
 
 Read [`WORKSPACE.md`](WORKSPACE.md) and create the idea folder. If it already holds `SIGNALS.md`, read it: those are the facts the grilling starts from.
@@ -27,7 +37,7 @@ A fail ends the idea here: go to step 4 with REJECT.
 
 ## 3. Grill it
 
-Invoke `mattpocock-skills:grilling` on the idea.
+Invoke `mattpocock-skills:grilling` on the idea, asking as above.
 
 Track the one thing that skill does not: every claim the idea *depends on* but has not established. These are **assumptions**. "People will pay for this." "The data is available." "Nobody does this well yet." Each is an assumption until something outside this conversation says otherwise.
 
