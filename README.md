@@ -22,14 +22,14 @@ When two skills in a category genuinely share a reference, the skill that *creat
 
 ## Naming
 
-- **Skills:** lowercase kebab-case, domain first — `idea-grill`, `idea-research`, `project-brief`. The domain word groups a category into a readable sequence, and the frontmatter `description` (not the name) is what actually triggers a skill. No `product-` prefix: the category folder already says that.
+- **Skills:** lowercase kebab-case, domain first — `client-intake`, `idea-grill`, `idea-research`, `project-brief`. The domain word groups a category into a readable sequence, and the frontmatter `description` (not the name) is what actually triggers a skill. No `product-` prefix: the category folder already says that.
 - **Sibling files:** `UPPERCASE-KEBAB.md`. `*-FORMAT.md` for an output shape the skill fills in; a plain name for reference material it reads.
 
 ## Categories
 
 | Category | For |
 |---|---|
-| [`product`](skills/product) | Idea → verdict → project definition |
+| [`product`](skills/product) | Client pain → idea → verdict → project definition |
 
 ## Where artifacts go
 

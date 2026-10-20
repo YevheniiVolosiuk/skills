@@ -11,7 +11,7 @@ The interrogation is not this skill's job. `mattpocock-skills:grilling` does tha
 
 ## 1. Open the workspace
 
-Read [`WORKSPACE.md`](WORKSPACE.md) and create the idea folder.
+Read [`WORKSPACE.md`](WORKSPACE.md) and create the idea folder. If it already holds `SIGNALS.md`, read it: those are the facts the grilling starts from.
 
 Before asking a single question, write the idea down in the user's own words. One paragraph. Every later step checks itself against this paragraph, so capture what they said, not what you think they meant.
 

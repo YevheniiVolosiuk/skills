@@ -1,8 +1,11 @@
 # product
 
-Skills that take an idea from "what if" to a written project definition.
+Skills that take a client's pain to a written project definition.
 
 ```
+client-intake   →  INTAKE.md  →  PROPOSAL.md  →  PAINS-INDEX.md
+                                                   ↓ pain at 3 clients
+                                                 SIGNALS.md
 idea-grill      →  IDEA-DECISION.md
 idea-research   →  RESEARCH-QUESTIONS.md  →  research/
 project-brief   →  PROJECT-DESCRIPTION.md
@@ -10,10 +13,13 @@ project-brief   →  PROJECT-DESCRIPTION.md
 
 | Skill | Does | Leans on |
 |---|---|---|
+| [`client-intake`](client-intake) | Client post → questions → intake, proposal, logged pain | — |
 | [`idea-grill`](idea-grill) | Raw idea → written verdict | `mattpocock-skills:grilling` |
 | [`idea-research`](idea-research) | Open assumptions → ranked questions, dispatched | `mattpocock-skills:research` |
 | [`project-brief`](project-brief) | PROCEED verdict → project definition | — |
 
-`idea-grill` is the root of the chain and holds the two files the others read across to: [`WORKSPACE.md`](idea-grill/WORKSPACE.md) (where artifacts live) and [`DECISION-STATES.md`](idea-grill/DECISION-STATES.md) (PROCEED / REFINE / PARK / REJECT). Everything else each skill owns outright.
+`client-intake` sits upstream: it gathers evidence and judges nothing. `idea-grill` judges.
 
-Three skills, deliberately. The fourth gets written after one of these fails on a real idea.
+`idea-grill` holds the files the others read across to: [`WORKSPACE.md`](idea-grill/WORKSPACE.md) (where artifacts live) and [`DECISION-STATES.md`](idea-grill/DECISION-STATES.md) (PROCEED / REFINE / PARK / REJECT). `client-intake` owns [`ONE-SCREEN-FORMAT.md`](client-intake/ONE-SCREEN-FORMAT.md), the shape of every file a human reads, and [`SIGNALS-FORMAT.md`](client-intake/SIGNALS-FORMAT.md). Everything else each skill owns outright.
+
+Rule files (`MOM-TEST.md` and the like) are books distilled into pass/fail checks, kept beside the step that uses them.

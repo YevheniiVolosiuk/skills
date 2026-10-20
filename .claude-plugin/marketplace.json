@@ -9,10 +9,11 @@
     {
       "name": "yevhenii-skills",
       "source": "./",
-      "description": "Personal agent skills. Currently a product discovery chain: grill an idea to a verdict, research what could kill it, then define the project.",
+      "description": "Personal agent skills. Currently a product discovery chain: turn client posts into questions, proposals and logged pains, grill an idea to a verdict, research what could kill it, then define the project.",
       "category": "product",
       "keywords": [
         "product",
+        "client-intake",
         "discovery",
         "idea-validation",
         "project-brief"
