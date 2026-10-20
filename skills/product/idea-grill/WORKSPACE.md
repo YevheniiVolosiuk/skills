@@ -1,42 +1,49 @@
-# Idea workspace
+# Workspace
 
-Where idea artifacts live. Skills are reusable behaviour; these files are project memory. They do not live in this repo.
+Where artifacts live. Skills are reusable behaviour; these files are project memory. They do not live in this repo.
 
 ## Location
 
-An idea that has no project yet:
+A private GitHub repo, `opportunities`, cloned at `~/opportunities/`. Every skill in this category writes there, and the weekly scheduled run commits there.
 
 ```
-~/ideas/<slug>/
+~/opportunities/
+├── INDUSTRIES.md               # scored rotation list for opportunity-scan
+├── clients/
+│   ├── PAINS-INDEX.md          # normalized pain → clients who have it
+│   └── <client-slug>/          # client-intake
+│       ├── INTAKE.md
+│       ├── PROPOSAL.md
+│       └── NOTES.md            # raw evidence, agent notes
+└── ideas/
+    ├── BACKLOG.md              # opportunity-scan findings below the hand-off bar
+    └── <slug>/
+        ├── SIGNALS.md          # client-intake or opportunity-scan
+        ├── IDEA-DECISION.md    # idea-grill
+        ├── RESEARCH-QUESTIONS.md  # idea-research
+        ├── research/           # the research skill writes findings here
+        │   └── <question-slug>.md
+        └── PROJECT-DESCRIPTION.md  # project-brief
 ```
 
-An idea that belongs to an existing project:
+Files appear in this order as an idea moves through the chain. A missing file means that stage has not run.
 
-```
-<project-root>/docs/ideas/<slug>/
-```
+Once an idea has its own project repo, move its folder to `<project-root>/docs/ideas/<slug>/`. Move it rather than forking it.
 
-Use the project path as soon as a project exists. Move the folder rather than forking it.
+## File names
 
-## Slug
+Does the skill know the file's name before it runs?
 
-Lowercase kebab-case, named for the thing the idea does, not the technology it uses:
+- **Yes → UPPERCASE:** `INTAKE.md`, `SIGNALS.md`, `IDEA-DECISION.md`
+- **No, it is named after its content → lowercase:** `research/<question-slug>.md`, client and idea folders
 
-- `meeting-notes-search` — good
-- `ai-tool` — too vague to find again
-- `nih-v2` — an internal reference nobody will decode in six months
+## Slugs
 
-## Contents
+Lowercase kebab-case.
 
-Files appear in this order as an idea moves through the lifecycle. A missing file means that stage has not run.
+- **Idea:** named for the thing it does, not the technology. `class-booking-reminders`, not `ai-tool` or `nih-v2`.
+- **Client:** named for the company. `fitwerk`, not `client-3` or `upwork-job-41`.
 
-```
-~/ideas/<slug>/
-├── IDEA-DECISION.md        # idea-grill
-├── RESEARCH-QUESTIONS.md   # idea-research
-├── research/               # the research skill writes findings here
-│   └── <question-slug>.md
-└── PROJECT-DESCRIPTION.md  # project-brief
-```
+## History
 
 Never rewrite a file an earlier stage produced. Append a dated section instead — the history of how a verdict changed is the point of keeping the record.
