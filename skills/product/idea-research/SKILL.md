@@ -5,13 +5,13 @@ description: Turn an idea's open assumptions into a prioritised set of answerabl
 
 # Idea research
 
-Converts open assumptions into `research-questions.md` — a ranked question set, each one answerable by evidence rather than opinion — and hands it to the research skill.
+Converts open assumptions into `RESEARCH-QUESTIONS.md` — a ranked question set, each one answerable by evidence rather than opinion — and hands it to the research skill.
 
 The point is ordering. Most research on a new idea is wasted because the cheap confirming questions get answered first and the expensive threatening one never gets asked at all.
 
 ## 1. Read the decision record
 
-Read `idea-decision.md` from the idea workspace ([`WORKSPACE.md`](../idea-grill/WORKSPACE.md)).
+Read `IDEA-DECISION.md` from the idea workspace ([`WORKSPACE.md`](../idea-grill/WORKSPACE.md)).
 
 If there is no decision record, run `idea-grill` first. Researching an idea nobody has grilled produces answers to questions nobody needed.
 
@@ -38,11 +38,11 @@ Rank: kill-questions, then scope questions (the answer changes what gets built),
 
 ## 4. Write and dispatch
 
-Fill [`RESEARCH-QUESTIONS-FORMAT.md`](RESEARCH-QUESTIONS-FORMAT.md) into the workspace as `research-questions.md`.
+Fill [`RESEARCH-QUESTIONS-FORMAT.md`](RESEARCH-QUESTIONS-FORMAT.md) into the workspace as `RESEARCH-QUESTIONS.md`.
 
 Invoke `mattpocock-skills:research` on the kill-questions, one dispatch per question, writing findings into `research/` in the workspace.
 
-**Done when:** every kill-question has a findings file. Then append a dated section to `idea-decision.md` recording what the answers did to the verdict — confirmed it, or changed it.
+**Done when:** every kill-question has a findings file. Then append a dated section to `IDEA-DECISION.md` recording what the answers did to the verdict — confirmed it, or changed it.
 
 ## Where it goes next
 

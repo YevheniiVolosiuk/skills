@@ -1,7 +1,7 @@
 {
   "name": "yevhenii-skills",
   "version": "0.1.0",
-  "description": "Personal agent skills. Currently a product discovery chain: grill an idea to a verdict, research what could kill it, then define the project.",
+  "description": "Personal agent skills. Currently a product discovery chain: turn client posts into questions, proposals and logged pains, grill an idea to a verdict, research what could kill it, then define the project.",
   "author": {
     "name": "Yevhenii Volosiuk"
   },
@@ -10,11 +10,13 @@
   "keywords": [
     "skills",
     "product",
+    "client-intake",
     "discovery",
     "idea-validation",
     "project-brief"
   ],
   "skills": [
+    "./skills/product/client-intake",
     "./skills/product/idea-grill",
     "./skills/product/idea-research",
     "./skills/product/project-brief"

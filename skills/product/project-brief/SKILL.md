@@ -1,17 +1,17 @@
 ---
 name: project-brief
-description: Write project-description.md - what is being built, for whom, and what is explicitly out of scope. Use when an idea has cleared its decision record and becomes a project, or when an existing project has no written definition.
+description: Write PROJECT-DESCRIPTION.md - what is being built, for whom, and what is explicitly out of scope. Use when an idea has cleared its decision record and becomes a project, or when an existing project has no written definition.
 ---
 
 # Project brief
 
-Turns a PROCEED verdict into `project-description.md` — the document every later decision on the project gets checked against.
+Turns a PROCEED verdict into `PROJECT-DESCRIPTION.md` — the document every later decision on the project gets checked against.
 
 A brief earns its keep through what it *excludes*. A description that would fit twelve different products has defined nothing.
 
 ## 1. Check the input
 
-Read `idea-decision.md` from the idea workspace ([`WORKSPACE.md`](../idea-grill/WORKSPACE.md)), plus anything in `research/`.
+Read `IDEA-DECISION.md` from the idea workspace ([`WORKSPACE.md`](../idea-grill/WORKSPACE.md)), plus anything in `research/`.
 
 If the verdict is not PROCEED, say so and stop. A brief written over a REFINE launders an open question into a commitment — the exact failure this chain exists to prevent.
 
@@ -37,7 +37,7 @@ Then test the whole document: hand it to someone who has never heard the idea, a
 
 ## 4. Place it
 
-Write `project-description.md` into the project root if a project repo exists, otherwise into the idea workspace.
+Write `PROJECT-DESCRIPTION.md` into the project root if a project repo exists, otherwise into the idea workspace.
 
 Once a project repo exists, move the whole idea folder to `<project-root>/docs/ideas/<slug>/`. The decision record and the research are the project's reasoning history — they belong with the code they explain.
 

@@ -7,6 +7,15 @@
 
 <One paragraph, in the user's own words, captured before any questioning.>
 
+## Filters
+
+| Filter | Result | Fact |
+|---|---|---|
+| Money | pass / fail / unknown | <the signal, or what is missing> |
+| Reachable | | |
+| Small | | |
+| Open | | |
+
 ## First user
 
 <Who specifically. A role and a situation, not a demographic.>
