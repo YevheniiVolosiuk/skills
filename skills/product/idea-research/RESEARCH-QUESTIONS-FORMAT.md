@@ -1,7 +1,7 @@
 # Research questions — <Idea name>
 
 **Date:** YYYY-MM-DD
-**Source:** idea-decision.md
+**Source:** IDEA-DECISION.md
 
 ## Kill-questions
 

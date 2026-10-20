@@ -1,7 +1,7 @@
 # <Project name>
 
 **Date:** YYYY-MM-DD
-**From:** `docs/ideas/<slug>/idea-decision.md`
+**From:** `docs/ideas/<slug>/IDEA-DECISION.md`
 
 ## What it is
 
@@ -37,6 +37,6 @@ Carried from research and from reality. Each is a bar the project has to clear.
 
 ## Open questions
 
-Things still unknown that do not block starting. A question that blocks starting belongs in `research-questions.md`, not here.
+Things still unknown that do not block starting. A question that blocks starting belongs in `RESEARCH-QUESTIONS.md`, not here.
 
 - <question>

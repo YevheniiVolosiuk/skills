@@ -32,11 +32,11 @@ Files appear in this order as an idea moves through the lifecycle. A missing fil
 
 ```
 ~/ideas/<slug>/
-├── idea-decision.md        # idea-grill
-├── research-questions.md   # idea-research
+├── IDEA-DECISION.md        # idea-grill
+├── RESEARCH-QUESTIONS.md   # idea-research
 ├── research/               # the research skill writes findings here
 │   └── <question-slug>.md
-└── project-description.md  # project-brief
+└── PROJECT-DESCRIPTION.md  # project-brief
 ```
 
 Never rewrite a file an earlier stage produced. Append a dated section instead — the history of how a verdict changed is the point of keeping the record.

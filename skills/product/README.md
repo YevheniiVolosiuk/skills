@@ -3,9 +3,9 @@
 Skills that take an idea from "what if" to a written project definition.
 
 ```
-idea-grill      →  idea-decision.md
-idea-research   →  research-questions.md  →  research/
-project-brief   →  project-description.md
+idea-grill      →  IDEA-DECISION.md
+idea-research   →  RESEARCH-QUESTIONS.md  →  research/
+project-brief   →  PROJECT-DESCRIPTION.md
 ```
 
 | Skill | Does | Leans on |
