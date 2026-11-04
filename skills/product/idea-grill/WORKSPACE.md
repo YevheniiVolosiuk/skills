@@ -4,11 +4,10 @@ Where artifacts live. Skills are reusable behaviour; these files are project mem
 
 ## Location
 
-A private GitHub repo, `stubbornweb/opportunities`, cloned at `~/www/opportunities/`. Every skill in this category writes there, and the weekly scheduled run commits there.
+A private GitHub repo, `stubbornweb/opportunities`, cloned at `~/www/opportunities/`. Every skill in this category writes there.
 
 ```
 ~/www/opportunities/
-├── INDUSTRIES.md               # scored rotation list for opportunity-scan
 ├── clients/
 │   ├── PAINS-INDEX.md          # normalized pain → clients who have it
 │   └── <client-slug>/          # client-intake
@@ -16,9 +15,8 @@ A private GitHub repo, `stubbornweb/opportunities`, cloned at `~/www/opportuniti
 │       ├── PROPOSAL.md
 │       └── NOTES.md            # raw evidence, agent notes
 └── ideas/
-    ├── BACKLOG.md              # opportunity-scan findings below the hand-off bar
     └── <slug>/
-        ├── SIGNALS.md          # client-intake or opportunity-scan
+        ├── SIGNALS.md          # client-intake
         ├── IDEA-DECISION.md    # idea-grill
         ├── RESEARCH-QUESTIONS.md  # idea-research
         ├── research/           # the research skill writes findings here
