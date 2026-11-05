@@ -46,7 +46,7 @@ Not here. Skills are reusable behaviour; idea and project documents are project 
 As a plugin:
 
 ```
-/plugin marketplace add YevheniiVolosiuk/skills
+/plugin marketplace add stubbornweb/idea-engine
 /plugin install yevhenii-skills@yevhenii
 ```
 
