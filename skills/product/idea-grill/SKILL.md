@@ -57,6 +57,6 @@ Fill [`IDEA-DECISION-FORMAT.md`](IDEA-DECISION-FORMAT.md) into the workspace as 
 
 ## Where it goes next
 
-- **PROCEED** → `project-brief`
+- **PROCEED** → `project-start`
 - **REFINE**, or any load-bearing assumption still open → `idea-research`
 - **PARK** / **REJECT** → stop. The record is the deliverable.
