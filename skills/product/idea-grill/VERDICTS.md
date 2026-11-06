@@ -1,6 +1,6 @@
-# Decision states
+# Verdicts
 
-Exactly one of these ends every idea grilling. The state is a claim about evidence, not about enthusiasm.
+Exactly one of these ends every idea grilling. The verdict is a claim about evidence, not about enthusiasm.
 
 ## PROCEED
 
@@ -36,11 +36,11 @@ Next: nothing. Write it down anyway — a rejected idea is the cheapest way to a
 
 ## Choosing
 
-Reach for the state the evidence supports. The pull is always toward PROCEED, because the user brought the idea and wants it to live; that pull is the reason this file exists.
+Reach for the verdict the evidence supports. The pull is always toward PROCEED, because the user brought the idea and wants it to live; that pull is the reason this file exists.
 
 Two honest tests:
 
-- Could you defend this state to someone who wants the idea dead?
+- Could you defend this verdict to someone who wants the idea dead?
 - Could you defend it to someone who wants it built?
 
-A state that fails either test is the wrong state.
+A verdict that fails either test is the wrong verdict.

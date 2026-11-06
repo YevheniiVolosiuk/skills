@@ -21,11 +21,13 @@ Every question to the user, in every step, goes through `AskUserQuestion`, one q
 
 ## 1. Open the workspace
 
-Read [`WORKSPACE.md`](WORKSPACE.md) and create the idea folder. If it already holds `SIGNALS.md`, read it: those are the facts the grilling starts from.
+Read [`WORKSPACE.md`](WORKSPACE.md). Agree the slug with the user, then check it against the slug rule there. If the slug breaks the rule, reject it, show the rule and ask for a new slug. Never change the slug yourself.
+
+Create the idea folder. If it already holds `SIGNALS.md`, read it: those are the facts the grilling starts from.
 
 Before asking a single question, write the idea down in the user's own words. One paragraph. Every later step checks itself against this paragraph, so capture what they said, not what you think they meant.
 
-**Done when:** the folder exists and holds the idea as the user framed it.
+**Done when:** the folder exists under a slug that follows the rule, and it holds the idea as the user framed it.
 
 ## 2. Filter it
 
@@ -47,11 +49,11 @@ An assumption is load-bearing when the idea dies if it turns out false. Mark tho
 
 ## 4. Write the verdict
 
-Read [`DECISION-STATES.md`](DECISION-STATES.md) and pick the state the evidence supports.
+Read [`VERDICTS.md`](VERDICTS.md) and pick the verdict the evidence supports.
 
 Fill [`IDEA-DECISION-FORMAT.md`](IDEA-DECISION-FORMAT.md) into the workspace as `IDEA-DECISION.md`.
 
-**Done when:** the file names exactly one state, and every filter from step 2 and every assumption from step 3 appears in it — each either resolved by the grilling, or listed open with the question that would resolve it. An assumption that appears nowhere in the file was dropped, not handled.
+**Done when:** the file names exactly one verdict, and every filter from step 2 and every assumption from step 3 appears in it — each either resolved by the grilling, or listed open with the question that would resolve it. An assumption that appears nowhere in the file was dropped, not handled.
 
 ## Where it goes next
 
