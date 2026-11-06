@@ -17,7 +17,13 @@ If the folder already exists, read `NOTES.md` and resume at the first step whose
 
 `NOTES.md` is append-only: the post, the questions sent, every reply, your working notes.
 
-**Done when:** `NOTES.md` holds the input, dated, with its source.
+When the client sends example sites, in the post or in any reply, add one line for each to `EXAMPLES.md` in the client folder: a link, and what the client likes about it, in the client's words. Write **unknown** when the client did not say. `project-brief` copies these lines into the brief.
+
+```markdown
+- [acme-gym.com](https://acme-gym.com): "the booking calendar is so easy"
+```
+
+**Done when:** `NOTES.md` holds the input, dated, with its source, and `EXAMPLES.md` holds every example site in the input.
 
 ## 2. Draft the questions
 
@@ -31,7 +37,7 @@ Append it to `NOTES.md`, show it to the user, and stop. The user sends it.
 
 ## 3. Read the reply
 
-Append the reply to `NOTES.md` verbatim. Sort every answer into a bucket from [`MOM-TEST.md`](MOM-TEST.md). Fill the four forces and the trigger from [`DEMAND-SIDE-SALES.md`](DEMAND-SIDE-SALES.md). Write all of it to `NOTES.md`.
+Append the reply to `NOTES.md` verbatim, and add its example sites to `EXAMPLES.md` as in step 1. Sort every answer into a bucket from [`MOM-TEST.md`](MOM-TEST.md). Fill the four forces and the trigger from [`DEMAND-SIDE-SALES.md`](DEMAND-SIDE-SALES.md). Write all of it to `NOTES.md`.
 
 If the struggling moment or the cost is still unknown, draft up to 3 more questions and stop, as in step 2. One extra round at most; after it, unknown stays unknown.
 

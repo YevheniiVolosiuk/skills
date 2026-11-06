@@ -1,21 +1,25 @@
 ---
 name: project-brief
-description: Write PROJECT-DESCRIPTION.md - what is being built, for whom, and what is explicitly out of scope. Use when an idea has cleared its decision record and becomes a project, or when an existing project has no written definition.
+description: Write 1-idea/PROJECT-DESCRIPTION.md in a project repo - what is being built, for whom, the success targets, the references, and what is explicitly out of scope. Use after project-start has made the project repo, or when an existing project has no brief.
 ---
 
 # Project brief
 
-Turns a PROCEED verdict into `PROJECT-DESCRIPTION.md` — the document every later decision on the project gets checked against.
+Turns a PROCEED verdict into `1-idea/PROJECT-DESCRIPTION.md` — the document every later decision on the project gets checked against.
 
 A brief earns its keep through what it *excludes*. A description that would fit twelve different products has defined nothing.
 
 ## 1. Check the input
 
-Read `IDEA-DECISION.md` from the idea workspace ([`WORKSPACE.md`](../idea-grill/WORKSPACE.md)), plus anything in `research/`.
+Run this skill in a project repo. If the repo has no `PROJECT.md` at its root, stop and tell the user to run `project-start` first.
+
+Read `1-idea/IDEA-DECISION.md`, plus anything in `1-idea/research/`.
 
 If the verdict is not PROCEED, say so and stop. A brief written over a REFINE launders an open question into a commitment — the exact failure this chain exists to prevent.
 
 If the project has no decision record at all (an existing project being documented late), reconstruct one by asking the user the questions in [`VERDICTS.md`](../idea-grill/VERDICTS.md) under PROCEED. That takes minutes and it is the whole foundation.
+
+If `PROJECT.md` has a `**Client:**` line, read `EXAMPLES.md` in that client folder ([`WORKSPACE.md`](../idea-grill/WORKSPACE.md)), if it exists.
 
 **Done when:** you can state, in one sentence each, the first user and the problem in that user's words.
 
@@ -27,7 +31,15 @@ Carry the research findings in as constraints, not as prose. "Existing tools ret
 
 **Done when:** every section of the template has content, and every claim in it traces to the decision record, the research, or an answer the user gave you just now. Nothing traces to your own assumption about what they probably want.
 
-## 3. Force the exclusions
+## 3. Ask for targets and references
+
+Ask the user for 1 to 3 targets. A target is a number to reach and the date to reach it by. For a client project, use a number that the client counts, such as leads or bookings. Write the targets in "Success".
+
+Copy into "References" each line of the client's `EXAMPLES.md` that this project uses. Then ask the user for example sites. For each example, ask what to take from it and what not to take. Write one line for each example in "References".
+
+**Done when:** "Success" has 1 to 3 targets, each with a date, and each line in "References" has a link and what to take from it.
+
+## 4. Force the exclusions
 
 Write the out-of-scope section last and make it hurt. It should name things a reasonable person would expect this project to do.
 
@@ -35,10 +47,8 @@ Then test the whole document: hand it to someone who has never heard the idea, a
 
 **Done when:** the out-of-scope section names at least one thing the user actually wanted, deferred with a reason. An exclusion list of things nobody wanted anyway excludes nothing.
 
-## 4. Place it
+## 5. Place it
 
-Write `PROJECT-DESCRIPTION.md` into the project root if a project repo exists, otherwise into the idea workspace.
+Write the brief to `1-idea/PROJECT-DESCRIPTION.md` in the project repo.
 
-Once a project repo exists, move the whole idea folder to `<project-root>/docs/ideas/<slug>/`. The decision record and the research are the project's reasoning history — they belong with the code they explain.
-
-**Done when:** the file is at the project path and the idea folder sits beside it.
+**Done when:** the file is at `1-idea/PROJECT-DESCRIPTION.md`.
