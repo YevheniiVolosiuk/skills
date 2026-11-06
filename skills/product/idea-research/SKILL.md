@@ -46,4 +46,4 @@ Invoke `mattpocock-skills:research` on the kill-questions, one dispatch per ques
 
 ## Where it goes next
 
-Re-read [`DECISION-STATES.md`](../idea-grill/DECISION-STATES.md) against the findings. The verdict may have moved; a REFINE that researched well becomes a PROCEED or a REJECT, and either is progress.
+Re-read [`VERDICTS.md`](../idea-grill/VERDICTS.md) against the findings. The verdict may have moved; a REFINE that researched well becomes a PROCEED or a REJECT, and either is progress.

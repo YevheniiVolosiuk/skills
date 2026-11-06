@@ -4,10 +4,13 @@ Where artifacts live. Skills are reusable behaviour; these files are project mem
 
 ## Location
 
-A private GitHub repo, `stubbornweb/opportunities`, cloned at `~/www/opportunities/`. Every skill in this category writes there.
+Every skill in this category uses two fixed paths and no environment variables:
+
+- `~/www/idea-workspace/`, a clone of the private GitHub repo `stubbornweb/idea-workspace`. It holds the idea folders and the client folders.
+- `~/www/prototypes/<slug>/`, for quick experiments. It has no git.
 
 ```
-~/www/opportunities/
+~/www/idea-workspace/
 ├── clients/
 │   ├── PAINS-INDEX.md          # normalized pain → clients who have it
 │   └── <client-slug>/          # client-intake
@@ -26,7 +29,7 @@ A private GitHub repo, `stubbornweb/opportunities`, cloned at `~/www/opportuniti
 
 Files appear in this order as an idea moves through the chain. A missing file means that stage has not run.
 
-Once an idea has its own project repo, move its folder to `<project-root>/docs/ideas/<slug>/`. Move it rather than forking it.
+When an idea gets PROCEED, `project-start` moves its folder into `1-idea/` of the project repo.
 
 ## File names
 
@@ -37,7 +40,9 @@ Does the skill know the file's name before it runs?
 
 ## Slugs
 
-Lowercase kebab-case.
+A slug uses only `a-z`, `0-9` and single dashes. It starts and ends with a letter or a digit, and it has 40 characters or fewer. An idea slug must not be the name of a studio repo: `studio`, `hub`, `idea-engine`, `design-engine`, `prototype-engine` or `idea-workspace`.
+
+Reject a slug that breaks this rule, and show the rule. Never change a slug yourself: ask for a new one. A slug never changes after its folder is made.
 
 - **Idea:** named for the thing it does, not the technology. `class-booking-reminders`, not `ai-tool` or `nih-v2`.
 - **Client:** named for the company. `fitwerk`, not `client-3` or `upwork-job-41`.

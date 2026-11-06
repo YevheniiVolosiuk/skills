@@ -1,6 +1,7 @@
 # <Idea name>
 
-**State:** PROCEED | REFINE | PARK | REJECT
+**Format:** 1
+**Verdict:** PROCEED | REFINE | PARK | REJECT
 **Date:** YYYY-MM-DD
 
 ## The idea
@@ -40,7 +41,7 @@ Open assumptions carry the question that would settle them:
 
 ## Verdict
 
-<Why this state and not the adjacent one. For REJECT: the killer, in one sentence. For PARK: the observable trigger that reopens it.>
+<Why this verdict and not the adjacent one. For REJECT: the killer, in one sentence. For PARK: the observable trigger that reopens it.>
 
 ---
 

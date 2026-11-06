@@ -15,7 +15,7 @@ Read `IDEA-DECISION.md` from the idea workspace ([`WORKSPACE.md`](../idea-grill/
 
 If the verdict is not PROCEED, say so and stop. A brief written over a REFINE launders an open question into a commitment — the exact failure this chain exists to prevent.
 
-If the project has no decision record at all (an existing project being documented late), reconstruct one by asking the user the questions in [`DECISION-STATES.md`](../idea-grill/DECISION-STATES.md) under PROCEED. That takes minutes and it is the whole foundation.
+If the project has no decision record at all (an existing project being documented late), reconstruct one by asking the user the questions in [`VERDICTS.md`](../idea-grill/VERDICTS.md) under PROCEED. That takes minutes and it is the whole foundation.
 
 **Done when:** you can state, in one sentence each, the first user and the problem in that user's words.
 
