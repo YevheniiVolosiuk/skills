@@ -16,20 +16,20 @@ Every skill in this category uses two fixed paths and no environment variables:
 │   └── <client-slug>/          # client-intake
 │       ├── INTAKE.md
 │       ├── PROPOSAL.md
+│       ├── EXAMPLES.md         # example sites the client sent
 │       └── NOTES.md            # raw evidence, agent notes
 └── ideas/
     └── <slug>/
         ├── SIGNALS.md          # client-intake
         ├── IDEA-DECISION.md    # idea-grill
         ├── RESEARCH-QUESTIONS.md  # idea-research
-        ├── research/           # the research skill writes findings here
-        │   └── <question-slug>.md
-        └── PROJECT-DESCRIPTION.md  # project-brief
+        └── research/           # the research skill writes findings here
+            └── <question-slug>.md
 ```
 
 Files appear in this order as an idea moves through the chain. A missing file means that stage has not run.
 
-When an idea gets PROCEED, `project-start` moves its folder into `1-idea/` of the project repo.
+When an idea gets PROCEED, `project-start` moves its folder into `1-idea/` of the project repo. Then `project-brief` writes `1-idea/PROJECT-DESCRIPTION.md` there.
 
 ## File names
 
