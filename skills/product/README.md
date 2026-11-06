@@ -8,6 +8,7 @@ client-intake   →  INTAKE.md  →  PROPOSAL.md  →  PAINS-INDEX.md
                                                  SIGNALS.md
 idea-grill      →  IDEA-DECISION.md
 idea-research   →  RESEARCH-QUESTIONS.md  →  research/
+project-start   →  PROJECT.md (the project repo)
 project-brief   →  PROJECT-DESCRIPTION.md
 ```
 
@@ -16,7 +17,8 @@ project-brief   →  PROJECT-DESCRIPTION.md
 | [`client-intake`](client-intake) | Client post → questions → intake, proposal, logged pain | — |
 | [`idea-grill`](idea-grill) | Raw idea → written verdict | `mattpocock-skills:grilling` |
 | [`idea-research`](idea-research) | Open assumptions → ranked questions, dispatched | `mattpocock-skills:research` |
-| [`project-brief`](project-brief) | PROCEED verdict → project definition | — |
+| [`project-start`](project-start) | PROCEED verdict or existing project → project repo | — |
+| [`project-brief`](project-brief) | Project repo → project definition | — |
 
 `client-intake` sits upstream: it gathers evidence and judges nothing. `idea-grill` judges.
 
