@@ -1,13 +1,12 @@
-# skills
+# idea-engine
 
-Personal agent skills, shipped as a Claude Code plugin.
+The Idea Engine of the studio: agent skills, shipped as a Claude Code plugin.
 
 ## Layout
 
 ```
 .claude-plugin/
   plugin.json        every skill path, listed explicitly
-  marketplace.json   makes this repo installable as a marketplace
 skills/
   <category>/
     README.md        what the category is for
@@ -43,11 +42,11 @@ Not here. Skills are reusable behaviour; idea and project documents are project 
 
 ## Install
 
-As a plugin:
+As a plugin, from the studio marketplace:
 
 ```
-/plugin marketplace add stubbornweb/idea-engine
-/plugin install yevhenii-skills@yevhenii
+/plugin marketplace add stubbornweb/studio
+/plugin install idea-engine@studio
 ```
 
 Or symlink a single skill while tuning it:
